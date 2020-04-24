@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Register for Frosh IMs</h1>
+
+    <form action='/register' method='post'>
+    <input autocomplete="off" autofocus name='name' placeholder="Name" type='text'>
+    <select name='dorm'>
+        <option disabled selected value="">Dorm</option>
+        <option value='Apley Court'>Apley Court</option>
+        <option value="Canaday">Canaday</option>
+        <option value="Grays">Grays</option>
+        <option value="Greenough">Greenough</option>
+        <option value="Lionel">Lionel</option>
+        <option value="Mathews">Mathews</option>
+    </select>
+    <input type='submit' value='Register'>
+    </form>
+
+{% endblock %}
